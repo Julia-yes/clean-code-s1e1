@@ -5,7 +5,7 @@
     font-family: Lato, sans-serif;
 }
 
-.aaa {
+.matrix {
     width: 500px;
     margin: 0 auto;
     display: block;
@@ -16,13 +16,13 @@
     width: 100%;
 }
 
-.aaa .more_inf {
+.matrix__link {
     font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
 
-    .aaa {
+    .matrix {
         text-align: center;
     }
 
