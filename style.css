@@ -160,7 +160,7 @@ li > input[type="text"] {
 
 /* Completed */
 
-ul#completed-tasks label {
+.section__label {
     text-decoration: line-through;
     color: #888;
 }

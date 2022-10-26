@@ -15,13 +15,13 @@
       <section class="main-part__section section add-task">
         <h3 class="section__title">Add Item</h3>
           <div class="add-task__wrapper">
-            <input id="new-task"class="section__input" type="text">
-            <button class="section__button button button__add" id="uuu">Add</button>
+            <input class="section__input add-task__input" type="text">
+            <button class="section__button button button__add">Add</button>
           </div>
       </section>
-      <section class="main-part__section section tasks-list">
+      <section class="main-part__section section incomplete-tasks">
         <h3 class="section__title">Todo</h3>
-        <ul id="incomplete-tasks" class="section__list list">
+        <ul class="section__list list incomplete-tasks__list">
           <li class="list__item">
             <input type="checkbox" class="section__checkbox">
             <label class="section__label">Pay Bills</label>
@@ -31,7 +31,7 @@
               <img class="button__img" src="./remove.svg" alt="remove icon">
             </button>
           </li>
-          <li class="editMode list__item"  class="list__item">
+          <li class="editMode list__item">
             <input type="checkbox" class="section__checkbox">
             <label class="section__label">Go Shopping</label>
             <input type="text" value="Go Shopping" class="section__input">
@@ -44,7 +44,7 @@
       </section>
       <section class="main-part__section section completed-tasks">
         <h3 class="section__title">Completed</h3>
-        <ul id="completed-tasks" class="section__list list">
+        <ul class="section__list list completed-tasks__list">
           <li  class="list__item">
             <input type="checkbox" class="section__checkbox" checked>
             <label class="section__label">See the Doctor</label>
