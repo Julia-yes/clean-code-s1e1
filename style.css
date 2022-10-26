@@ -58,7 +58,7 @@ button {
     outline: none;
 }
 
-button {
+.section__button {
     background: none;
     border: 0px;
     color: #888;
@@ -68,8 +68,13 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.section__button:hover {
     color: #3a3A3a;
+}
+
+.button__delete {
+    border: none;
+    background-color: transparent;
 }
 
 /* Heading */
@@ -143,13 +148,13 @@ li > input[type="text"] {
     width: 226px;
 }
 
-button.delete img {
+.button__img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.button__img:hover {
     transform: rotateZ(0);
 }
 
