@@ -42,6 +42,7 @@
 
 .add-task__wrapper {
     display: flex;
+    margin-top: 20px;
 }
 
 .list {
@@ -78,8 +79,7 @@ button {
 }
 
 /* Heading */
-h3,
-label[for='new-task'] {
+.section__title {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -89,7 +89,7 @@ label[for='new-task'] {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.section__input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -102,18 +102,13 @@ input[type="text"] {
     color: #888;
 }
 
-input[type="text"]:focus {
+.section__input:focus {
     color: #333;
 }
 
 /* New Task */
 
-label[for='new-task'] {
-    display: block;
-    margin: 0 0 20px;
-}
-
-input#new-task {
+.add-task__input {
     width: 318px;
 }
 
@@ -133,18 +128,18 @@ li > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.section__checkbox {
     margin: 0 10px;
 }
 
-li > label {
+.section__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li > input[type="text"] {
+.section__input {
     width: 226px;
 }
 
@@ -160,22 +155,22 @@ li > input[type="text"] {
 
 /* Completed */
 
-.section__label {
+.section__label_completed {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
 
-ul li input[type=text] {
+.list__item .section__input {
     display: none;
 }
 
-ul li.editMode input[type=text] {
+.editMode .section__input {
     display: inline-block;
     width: 224px;
 }
 
-ul li.editMode label {
+.editMode .section__label {
     display: none;
 }
