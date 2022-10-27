@@ -17,7 +17,8 @@
 }
 
 .matrix__link {
-    font-family: fantasy, cursive;
+    font-family: Signika;
+    font-weight: 500;
 }
 
 @media (max-width:768px) {
@@ -124,10 +125,6 @@ button {
     align-items: center;
 }
 
-li > * {
-    vertical-align: middle;
-}
-
 .section__checkbox {
     margin: 0 10px;
 }
@@ -137,6 +134,7 @@ li > * {
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
+    flex-grow: 1;
 }
 
 .section__input {

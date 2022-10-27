@@ -59,7 +59,6 @@ var createNewTaskElement=function(taskString){
 }
 
 
-
 var addTask=function(){
     console.log("Add Task...");
     //Create a new list item with the text from the #new-task:
@@ -67,6 +66,7 @@ var addTask=function(){
     var listItem=createNewTaskElement(taskInput.value);
     listItem.className="list__item";
     //Append listItem to incompleteTaskHolder
+    //listItem.classList.add("section__label_completed")
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
     taskInput.value="";
@@ -79,9 +79,7 @@ var editTask=function(){
     console.log("Edit Task...");
     console.log("Change 'edit' to 'save'");
 
-
     var listItem=this.parentNode;
-
     var editInput=listItem.querySelector('.section__input');
     var label=listItem.querySelector(".section__label");
     var editBtn=listItem.querySelector(".button__edit");
@@ -121,6 +119,8 @@ var taskCompleted=function(){
 
     //Append the task list item to the #completed-tasks
     var listItem=this.parentNode;
+    console.log(listItem)
+    listItem.querySelector(".section__label").classList.add("section__label_completed");
     completedTasksHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskIncomplete);
 
@@ -133,6 +133,7 @@ var taskIncomplete=function(){
     //When the checkbox is unchecked
     //Append the task list item to the #incompleteTasks.
     var listItem=this.parentNode;
+    listItem.querySelector(".section__label").classList.remove("section__label_completed");
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
 }
